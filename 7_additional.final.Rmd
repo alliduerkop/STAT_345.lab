@@ -1,0 +1,17 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+```{r}
+library(dslabs)
+library(dplyr)
+data("murders")
+
+murders <- murders %>%
+  filter(population <= 80000)
+murders
+
+  
+```
+
